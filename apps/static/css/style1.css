@@ -1,0 +1,98 @@
+body{
+    background-image: url(../img/analytic.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+  background-size: cover;
+}
+
+
+#uname{
+    font-size: 30px;
+    color: rgb(185, 175, 219);
+    font-style: italic;
+}
+
+
+
+.container{
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    width: 600px;
+}
+
+.moni{
+    width: 500px;
+    text-align: center;
+    background-color: lightblue;  
+      
+  }
+
+.content{
+    width: 600px;
+}  
+
+#update{
+   margin: 5px 5px 5px 30px;
+   background-color: yellow;
+}
+
+#drivers{
+    margin: 5px 15px 5px 55px;
+    background-color: yellow;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+.item{
+    height: 45px;
+    position: relative;
+    list-style: none;
+    list-style-position: unset;
+    padding: 0;
+    margin-top:10px;
+}
+
+.item h2{
+    position: absolute;
+    left:0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.driverNameColor{
+    position: absolute;
+    left: 121px;
+    font-size: medium;
+    background-color: rgb(3, 97, 104);
+    border-width: 0;
+    margin-top: 13px;
+}
+
+.driverAddColor{
+    size: 40px;
+    position: absolute;
+    left:341px;
+    margin-top: 13px;
+    background:rgb(153, 153, 153);
+    border-width: 0;
+}
+
+.uploads{
+    font-size:20px;
+    border-width: 0;
+    background-color: rgb(3, 97, 104);
+}
+
+a{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(3, 97, 104);
+
+}
+

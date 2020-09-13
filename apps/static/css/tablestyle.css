@@ -1,0 +1,195 @@
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+div{
+	margin-bottom: 20px;
+}
+
+label{
+	margin-bottom: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	background:#fff;
+	margin:auto;
+}
+body{
+	color: #666;
+	font-family: Lato, sans-serif, helvetica, arial;
+	font-size: 15px;
+	line-height: 1;
+	background-color: #aab5be;
+}
+
+
+
+pre {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+	margin-bottom: 24px;
+	max-width: 100%;
+	overflow: auto;
+	padding: 12px;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+
+
+
+
+textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+	font-size: 100%;
+	margin: 20;
+	max-width: 100%;
+	vertical-align: baseline;
+}
+
+
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+}
+
+table,
+th,
+td {
+	border: 1px solid black;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	border-width: 1px 0 0 1px;
+	margin-bottom: 24px;
+	width: 100%;
+}
+
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+    padding:5px 10px;
+}
+
+th {
+	border-width: 0 1px 1px 0;
+	font-weight: bold;
+	background-color:darkmagenta;
+	color: white;
+}
+
+td {
+	border-width: 0 1px 1px 0;
+}
+
+
+
+hr {
+	background-color: rgba(0, 0, 0, 0.1);
+	border: 0;
+	height: 1px;
+	margin-bottom: 23px;
+}
+
+body {
+    width: 100%;
+    min-width: 280px;
+    background: #fafafa;
+}
+
+header {
+    background: #fff;
+	text-align:center;
+}
+
+
+
+/* custom styles */
+
+
+.grid {
+		width: 100%;
+		max-width: 940px;
+		min-width: 320px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	.green-border-focus .form-control:focus {
+    border: 1px solid #8bc34a;
+    box-shadow: 0 0 0 0.2rem rgba(139, 195, 74, .25);
+}
+
+.check{
+	text-align: center;
+	white-space: nowrap;
+	font-size: large;
+}
+
+.check > div{
+	width: 100px;
+	height: 18px;
+	display: inline-block;
+}
+
+h1{
+	display: flex;
+	height: 50px;
+	color: white;
+	background-color: chocolate;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+h2{
+	display: flex;
+	height: 30px;
+	/* margin: 30px; */
+    width: 250px;
+	font-size: large;
+	background-color:#1c87c9;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+h3{
+	display: flex;
+	width: 300px;
+	color: white;
+	background-color: chocolate;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+mark{
+	margin-bottom: 20px;
+}
+
+.name{
+	text-align: center;
+}

@@ -1,0 +1,101 @@
+body {
+  
+  margin: 0;
+  padding: 0;
+  background: url(../static/img/banks.jpg) no-repeat center top; 
+  background-size: cover;
+  background-attachment: fixed;  
+  font-family: sans-serif;
+  height: 100vh;
+  
+}
+
+h1.heading{
+  position: relative;
+  top: 25px;
+  color:rgb(25, 27, 105);
+  
+}
+
+p{
+  height: 5px;
+}
+
+h1{
+  text-align: center;
+  margin: 50px;
+  font-style: n
+}
+
+.login-box {
+  width: 320px;
+  height: 400px;
+  background: black;
+  color: white;
+  top: 55%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  /* padding-top: 70px; */
+  padding-left:  30px;
+  padding-right: 30px;
+  border-radius: 30px;
+}
+
+
+.login-box h1 {
+  margin: 0;
+   padding: 0 0 20px; 
+  text-align: center;
+  font-size: 22px;
+}
+
+.login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+.login-box button {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box button a{
+  color: #000;
+  text-decoration: none;
+}
+.login-box button {
+  
+  height: 40px;
+  background: brown;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.login-box button:focus{
+  outline: 0;
+}
+
+.login-box button:hover {
+  cursor: pointer;
+  color: #000;
+}
+

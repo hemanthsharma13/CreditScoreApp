@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"
+    />
+        
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/tablestyle.css') }}">
+        <script src="{{ url_for('static', filename='js/script5.js') }}"></script>
+        <script>function exportToExcel(tableID){
+            let filename=sessionStorage.getItem("fileName")
+        console.log(filename)
+            console.log("This function is working")
+            var downloadurl;
+            var dataFileType = 'application/vnd.ms-excel';
+            var tableSelect = document.getElementById(tableID);
+            var tableHTMLData = tableSelect.outerHTML.replace(/ /g, '%20');
+            
+            // Specify file name
+            filename = filename?filename+'.xls':'export_excel_data.xls';
+            
+            // Create download link element
+            downloadurl = document.createElement("a");
+            
+            document.body.appendChild(downloadurl);
+            
+            if(navigator.msSaveOrOpenBlob){
+                var blob = new Blob(['\ufeff', tableHTMLData], {
+                    type: dataFileType
+                });
+                navigator.msSaveOrOpenBlob( blob, filename);
+            }else{
+                // Create a link to the file
+                downloadurl.href = 'data:' + dataFileType + ', ' + tableHTMLData;
+            
+                // Setting the file name
+                downloadurl.download = filename;
+                
+                //triggering the function
+                downloadurl.click();
+            }
+          }</script>
+    </head>
+<body onload="generateDynamicTable()">
+    <div id="tbexportData">
+    <h1 style="text-align: center;" id="getDataNameId">GINI</h1>
+    
+	<h2 id="getCurrentName">Model</h2>
+    <div style="margin-bottom: 30px;" class="grid tCenter">
+        <!-- Div element to display result -->
+            <div id="myContacts">
+                <!-- <p>You have zero contacts</p> -->
+            </div> 
+            
+            <div id="status" class="check">STATUS:
+             <!-- <div id="status" class="checks" >STATUS:</div> -->
+        </div>
+			 <!-- <textarea name="Comments" id="comments" cols="50" rows="5" placeholder="Comments"></textarea> -->
+			
+			 <br>
+			 <!-- <label for="guidelines">GUIDELINES:</label> -->
+			 <h3>GUIDELINES</h3>
+             <mark id="guidelines"> </mark> 
+             <div class="form-group green-border-focus">
+				<textarea class="form-control" id="exampleFormControlTextarea5" rows="3"></textarea>
+			  </div>
+    </div>
+</div>
+    <button onclick="exportToExcel('tbexportData')" class="btn btn-success">Export Table Data To Excel File</button>
+</body>
+
+    </html>

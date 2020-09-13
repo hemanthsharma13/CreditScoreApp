@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"
+    />
+        
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/tablestyle.css') }}">
+        <script src="{{ url_for('static', filename='js/script3.js') }}"></script>
+    </head>
+<body onload="generateDynamicTable()">
+    <div style="margin-top: 10px;" class="grid tCenter">
+        <label id="name" style="font-size: large;"></label>
+        <!-- Div element to display result -->
+            <div id="myContacts">
+                <!-- <p>You have zero contacts</p> -->
+			</div>
+			
+    </div>
+</body>
+
+    </html>

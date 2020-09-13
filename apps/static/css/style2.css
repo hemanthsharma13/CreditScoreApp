@@ -1,0 +1,153 @@
+#uname{
+    font-size: 30px;
+    color: rgb(185, 175, 219);
+    font-style: italic;
+}
+
+body{
+    font-weight: bold;
+    background-image: url(../img/img23.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.moni{
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    height: 10px;
+    background-color: lightblue; 
+    text-align: center; 
+    padding-bottom: 50px;
+    padding-top: 0;
+  }
+
+  .moni h1{
+      padding-left: 200px;
+      padding-right: 200px;
+  }
+
+  label{
+      position: absolute;
+      top: 250px;
+      left: 450px;
+  }
+
+  #start{
+      position: absolute;
+      top: 230px;
+      left: 550px;
+      margin-top: 20px;
+      margin-left: 120px;
+      color: black;
+      background-color: rgb(204, 189, 50);
+      border-width: 0;
+  }
+  #end{
+    position: absolute;
+    top: 230px;
+    left: 710px;
+    margin-top: 20px;
+    margin-left: 150px;
+    color: black;
+    background-color: rgb(204, 189, 50);
+    border-width: 0;
+}
+
+#modelSummary{
+    position: absolute;
+    top:450px;
+    left: 300px;
+}
+
+#modelSummary button{
+    background-color: darkorchid;
+    border-width: 0;
+    width: 80px;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+#modelList{
+    position: absolute;
+    top: 320px;
+    left: 450px;
+}
+
+#modelListItems{
+    position: relative;
+    padding: 20px;
+    margin: 0;
+    
+}
+
+#modelListItems button{
+    background-color: lightgreen;
+    border-width: 0;
+    width: 150px;
+}
+
+#driverList{
+    position: absolute;
+    top: 320px;
+    left: 800px;
+    
+}
+
+#driverVOI{
+    position: absolute;
+    top: 370px;
+    left:1000px;
+    background-color: lightgreen;
+    border-width: 0;
+    width: 80px;
+}
+
+
+
+#driverSummary2{
+    position: absolute;
+    top: 480px;
+    left:1000px;
+    background-color: darkorchid;
+    border-width: 0;
+    width: 80px;
+}
+
+#driverListItems{
+    position: relative;
+
+    padding: 20px;
+    margin: 0;
+}
+
+#driverListItems button{
+  background-color: lightgreen;
+  border-width: 0;
+  width: 150px;
+}
+
+a{
+    text-decoration: none;
+    color: cadetblue;
+}
+
+.next{
+    position: absolute;
+    top: 650px;
+    left: 1000px;
+    color: black;
+    background-color: cadetblue;
+    padding-left: 15px;
+    border-width: 0;
+    width: 50px;
+}
